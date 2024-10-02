@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap" rel="stylesheet">
+    <title>Vite + TS</title>
+    <script type="module" crossorigin src="/assets/index-D29wrZT7.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DgzXN0rA.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="wrapper">
+        <h1 class="rechner__title">Mehrwersteuer-Rechner</h1>
+        <div class="rechner">
+          <div class="mehrwertsteuer__container box">
+            <h2 class="container__title">Was soll berechnet werden?</h2>
+
+            <div class="radio__wrapper">            
+              <input type="radio" name="netto-brutto" class="mehrwertsteuer netto-zu-brutto" value="netto" checked>
+              <label for="netto-zu-brutto">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+            </div>
+            <div class="radio__wrapper">            
+              <input type="radio" name="netto-brutto" class="mehrwertsteuer brutto-zu-netto" value="brutto">
+              <label for="brutto-zu-netto">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+            </div>
+
+
+          </div>
+
+          <div class="mehrwertsteuersatz__container box">
+            <h2 class="container__title">Mehrwertsteuersatz</h2>
+            <div class="radio__wrapper">
+              <input type="radio" name="prozentsatz" class="prozentsatz " value="19" checked>
+              <label for="netto-zu-brutto">19%</label>
+            </div>
+            <div class="radio__wrapper">
+              <input type="radio" name="prozentsatz" class="prozentsatz" value="7">
+              <label for="brutto-zu-netto">7%</label>
+            </div>
+          </div>
+
+          <div class="input__container box">
+            <h2 class="container__title input__container">Nettobtrag(Preis ohne Mehrwertsteuer) in Euro*</h2>
+            <input type="number" name="betrag" id="input__betrag">
+          </div>
+
+          <input type="button" class="btn" value="Berechnen">
+
+          <div class="output__container">
+            <h2 class="output__title">Ergebnis</h2>
+
+            <div class="mehrwersteuerbetrag__container box">
+              <h2 class="container__title">Mehrwertsteuerbetrag</h2>
+              <p class="mehrwersteuerbetrag__output">€</p>
+            </div>
+
+            <div class="endpreis__container box">
+              <h2 class="container__title">Bruttobetrag(Endpreis)</h2>
+              <p class="endpreis__output">€</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
